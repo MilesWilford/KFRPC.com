@@ -123,6 +123,7 @@ a {
   }
   .tabbed {
     @include clearfix;
+    @include offset;
     h2 {
       @include column;
       border: 1px $col-bg-dark solid;

@@ -630,7 +630,8 @@ header {
     display: none; }
 
 .tabbed {
-  zoom: 1; }
+  zoom: 1;
+  margin-left: 80px; }
   .tabbed:after {
     clear: both; }
   .tabbed:before, .tabbed:after {
@@ -640,6 +641,12 @@ header {
     visibility: hidden;
     width: 0;
     height: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .tabbed {
+      margin-left: 68px; } }
+  @media only screen and (max-width: 767px) {
+    .tabbed {
+      margin-left: 0; } }
   .tabbed h2 {
     float: left;
     display: inline;
