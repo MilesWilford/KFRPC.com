@@ -105,7 +105,15 @@ a {
   }
 
   .lang-rows {
-      background-color: $col-fg-emph;
+    background-color: $col-fg-emph;
+    aside {
+      @include columns(5);
+      float: right;
+      img {
+        display: block;
+        margin: 1.4em auto;
+      }
+    }
     section {
       background-color: $col-fg;
       border: 1px $col-fg solid;
@@ -134,6 +142,22 @@ a {
       background-color: $col-fg;
       border-bottom: 0;
     }
+  }
+  .staff {
+    @include row;
+    @include columns(8);
+    h2 {
+      padding: 1.4em;
+    }
+    aside {
+      float: right;
+      padding: 10px;
+    }
+  }
+  .vcard {
+    @include columns(16);
+    padding-bottom: 1.4em;
+    text-align: center;
   }
 
   footer {

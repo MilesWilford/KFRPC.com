@@ -602,6 +602,28 @@ header {
 
 .lang-rows {
   background-color: #eeeeee; }
+  .lang-rows aside {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 280px;
+    float: right; }
+    @media only screen and (max-width: 767px) {
+      .lang-rows aside {
+        margin: 0; } }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      .lang-rows aside {
+        width: 220px; } }
+    @media only screen and (max-width: 767px) {
+      .lang-rows aside {
+        width: 300px; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .lang-rows aside {
+        width: 420px; } }
+    .lang-rows aside img {
+      display: block;
+      margin: 1.4em auto; }
   .lang-rows section {
     background-color: white;
     border: 1px white solid; }
@@ -640,6 +662,62 @@ header {
   .tabbed .current {
     background-color: white;
     border-bottom: 0; }
+
+.staff {
+  zoom: 1;
+  margin-bottom: 20px;
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px; }
+  .staff:after {
+    clear: both; }
+  .staff:before, .staff:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+  @media only screen and (max-width: 767px) {
+    .staff {
+      margin: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .staff {
+      width: 364px; } }
+  @media only screen and (max-width: 767px) {
+    .staff {
+      width: 300px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .staff {
+      width: 420px; } }
+  .staff h2 {
+    padding: 1.4em; }
+  .staff aside {
+    float: right;
+    padding: 10px; }
+
+.vcard {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  padding-bottom: 1.4em;
+  text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .vcard {
+      margin: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .vcard {
+      width: 748px; } }
+  @media only screen and (max-width: 767px) {
+    .vcard {
+      width: 300px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .vcard {
+      width: 420px; } }
 
 footer {
   position: relative;
