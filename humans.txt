@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Miles Wilford -- Developer -- +Miles Wilford
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+    Skeleton.css, Skeleton-SASS - this page was made to experiment with Skeleton-SASS

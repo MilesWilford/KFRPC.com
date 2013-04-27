@@ -1,0 +1,159 @@
+@import "normalize";
+@import "skeleton";
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+// Page Styles
+
+// page color definitions //
+$col-bg-light: #F6E9CA;
+$col-bg-dark: #000364;
+$col-nav-bg: #A6968E;
+$col-nav-hover: #6D6B80;
+$col-link-hover: #83828C;
+$col-tan-border: #F0C194;
+$col-fg: #FFF;
+$col-fg-emph: #EEE;
+
+html, body {
+  background-color: $col-bg-light;
+  color: $col-bg-dark;
+  height: auto;
+  font-size: 12px;
+}
+
+p {
+  line-height: 1.4em;
+  padding: 1.4em;
+  padding-top: 0;
+  &:first-child {
+    padding-top: 1.4em;
+  }
+}
+
+a {
+  color: $col-bg-dark;
+}
+
+.wrapper {
+}
+
+  header {
+    background-color: $col-bg-dark;
+    @media only screen and (min-width: 768px) {
+      background-image: url('../img/logo.png');
+      background-size: auto 150px;
+      padding-top: 150px; }
+    @media only screen and (max-width: 767px) {
+      background-image: url('../img/logo-mobile-port.png');
+      background-size: $mobile-portrait-width;
+      padding-top: 56px; }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      background-image: url('../img/logo-mobile-land.png');
+      background-size: $mobile-landscape-width;
+      padding-top: 78px; }
+    background-position: top center;
+    background-repeat: no-repeat;
+    nav {
+      background-color: $col-nav-bg;
+      border: {
+        top: 2px $col-tan-border solid;
+        bottom: 2px $col-tan-border solid;
+      }
+      width: 100%;
+      ul {
+        @include container;
+        text-align: center;
+      }
+      li {
+        @include columns(4);
+        height: 2.4em;
+        line-height: 2.4em;
+      }
+      a {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          background-color: $col-link-hover;
+        }
+      }
+    }
+  }
+
+  .main {
+    @include container;
+    background-color: $col-fg;
+    padding: 0;
+    h1, h2 {
+      text-align: center;
+      margin: 0;
+      padding: 0 .7em;
+    }
+    h1 {
+      background-color: $col-fg-emph;
+    }
+  }
+
+  .lang-rows {
+      background-color: $col-fg-emph;
+    section {
+      background-color: $col-fg;
+      border: 1px $col-fg solid;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  .tabbed {
+    @include clearfix;
+    h2 {
+      @include column;
+      border: 1px $col-bg-dark solid;
+      border-radius: 4px 4px 0 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      margin: 0;
+      padding: .35em;
+      text-align: center;
+      &:hover {
+        background-color: $col-link-hover;
+      }
+    }
+    .current {
+      background-color: $col-fg;
+      border-bottom: 0;
+    }
+  }
+
+  footer {
+    @include container;
+    p {
+      @include columns(6);
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .notice {
+    @include row;
+    @include columns(8);
+    @include offset(4);
+    border: 1px $col-bg-dark solid;
+  }
+
+@import "print";
