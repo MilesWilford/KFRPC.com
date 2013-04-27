@@ -491,8 +491,7 @@ html, body {
 
 p {
   line-height: 1.4em;
-  padding: 1.4em;
-  padding-top: 0; }
+  padding: 0 1.4em; }
   p:first-child {
     padding-top: 1.4em; }
 
@@ -661,7 +660,7 @@ header {
       background-color: #83828c; }
   .tabbed .current {
     background-color: white;
-    border-bottom: 0; }
+    border-bottom-color: white; }
 
 .staff {
   zoom: 1;
@@ -744,15 +743,16 @@ footer {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
-    width: 340px;
+    width: 940px;
     margin: 0;
-    text-align: center; }
+    text-align: right;
+    font-size: .8em; }
     @media only screen and (max-width: 767px) {
       footer p {
         margin: 0; } }
     @media only screen and (min-width: 768px) and (max-width: 959px) {
       footer p {
-        width: 268px; } }
+        width: 748px; } }
     @media only screen and (max-width: 767px) {
       footer p {
         width: 300px; } }
