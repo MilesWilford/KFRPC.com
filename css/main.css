@@ -712,7 +712,6 @@ header {
     padding: 10px; }
   .staff aside:last-child {
     float: none;
-    padding: 0;
     text-align: center; }
 
 .vcard {
