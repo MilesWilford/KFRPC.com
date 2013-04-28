@@ -93,6 +93,11 @@ a {
     @include container;
     background-color: $col-fg;
     padding: 0;
+    img {
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+    }
     h1, h2 {
       text-align: center;
       margin: 0;
@@ -152,6 +157,11 @@ a {
     aside {
       float: right;
       padding: 10px;
+    }
+    aside:last-child {
+      float: none;
+      padding: 0;
+      text-align: center;
     }
   }
   .vcard {
