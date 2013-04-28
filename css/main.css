@@ -501,36 +501,43 @@ a {
 img {
   max-width: 100%; }
 
+e
 header {
   background-color: #000364;
   background-position: top center;
   background-repeat: no-repeat; }
   @media only screen and (min-width: 768px) {
+    e
     header {
       background-image: url("../img/logo.png");
       background-size: auto 150px;
       padding-top: 150px; } }
   @media only screen and (max-width: 767px) {
+    e
     header {
       background-image: url("../img/logo-mobile-port.png");
       background-size: 300px;
       padding-top: 56px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
+    e
     header {
       background-image: url("../img/logo-mobile-land.png");
       background-size: 420px;
       padding-top: 78px; } }
+  e
   header nav {
     background-color: #a6968e;
     border-top: 2px #f0c194 solid;
     border-bottom: 2px #f0c194 solid;
     width: 100%; }
+    e
     header nav ul {
       position: relative;
       margin: 0 auto;
       padding: 0;
       width: 960px;
       text-align: center; }
+      e
       header nav ul:after {
         content: "\0020";
         display: block;
@@ -538,14 +545,18 @@ header {
         clear: both;
         visibility: hidden; }
       @media only screen and (min-width: 768px) and (max-width: 959px) {
+        e
         header nav ul {
           width: 768px; } }
       @media only screen and (max-width: 767px) {
+        e
         header nav ul {
           width: 300px; } }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
+        e
         header nav ul {
           width: 420px; } }
+    e
     header nav li {
       float: left;
       display: inline;
@@ -555,21 +566,27 @@ header {
       height: 2.4em;
       line-height: 2.4em; }
       @media only screen and (max-width: 767px) {
+        e
         header nav li {
           margin: 0; } }
       @media only screen and (min-width: 768px) and (max-width: 959px) {
+        e
         header nav li {
           width: 172px; } }
       @media only screen and (max-width: 767px) {
+        e
         header nav li {
           width: 300px; } }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
+        e
         header nav li {
           width: 420px; } }
+    e
     header nav a {
       display: block;
       font-weight: bold;
       text-decoration: none; }
+      e
       header nav a:hover {
         background-color: #83828c; }
 
