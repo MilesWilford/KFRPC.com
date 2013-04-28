@@ -498,6 +498,9 @@ p {
 a {
   color: #000364; }
 
+img {
+  max-width: 100%; }
+
 header {
   background-color: #000364;
   background-position: top center;
