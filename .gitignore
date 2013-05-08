@@ -1,2 +1,4 @@
 .project
-/output/
+output/
+tmp/
+.sass-cache
