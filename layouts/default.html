@@ -9,8 +9,7 @@
         <title>KF. Ross PC <% if@item[:title] %> &gt; <% end %><%= @item[:title] %></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="/css/main.min.css">
     </head>
     <body lang="en">
         <!--[if lt IE 7]>
@@ -28,9 +27,9 @@
                     </ul>
                 </nav>
             </header>
-
+            <div class="main">
             <%= yield %>
-
+            </div>
             <footer>
                 <p>All content &copy; KF ROSS PC unless otherwise noted</p>
             </footer>
@@ -38,7 +37,6 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="/js/main.min.js"></script>
     </body>
 </html>
