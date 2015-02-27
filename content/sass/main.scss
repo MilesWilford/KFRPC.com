@@ -75,7 +75,7 @@ img {
         text-align: center;
       }
       li {
-        @include columns(4);
+        @include third;
         height: 2.4em;
         line-height: 2.4em;
       }
